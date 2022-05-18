@@ -1,10 +1,12 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
+// import SplashScreen from 'react-native-splash-screen';
+import SplashScreen from "react-native-lottie-splash-screen";
 
 const App = () => {
   useEffect(() => {
-    setTimeout(() => {
+      // SplashScreen.hide();
+      setTimeout(() => {
       SplashScreen.hide();
     }, 3000);
   }, []);
