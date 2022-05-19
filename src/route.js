@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from './home';
 import Splash from './splash';
+import About from './about';
 
 const Stack = createStackNavigator();
 
@@ -13,8 +14,8 @@ const Route = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="About" component={About} />
       </Stack.Navigator>
     </NavigationContainer>
   );

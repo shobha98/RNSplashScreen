@@ -6,13 +6,6 @@ import souled_store from './asserts/souled_store.gif';
 import souled from './asserts/souled.gif';
 
 const Splash = () => {
-  const navigation = useNavigation();
-  useEffect(() => {
-    setTimeout(() => {
-      navigation.navigate('Home');
-    }, 2000);
-  }, []);
-
   return (
     <View style={styles.container}>
       <Image

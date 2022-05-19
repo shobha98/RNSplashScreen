@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View, BackHandler} from 'react-native';
 
-const Home = () => {
+const About = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.exampleText}>Welcome Splash example</Text>
+      <Text style={styles.exampleText}>This is About Screen</Text>
     </View>
   );
 };
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default About;
