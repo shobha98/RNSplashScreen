@@ -19,7 +19,6 @@ target 'RNSplashScreen' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
 
   target 'RNSplashScreenTests' do
     inherit! :complete

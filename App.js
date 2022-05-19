@@ -1,31 +1,11 @@
-import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
+import React from 'react';
+import {Text, View} from 'react-native';
+import Home from './src/home';
+import Route from './src/route';
+import Splash from './src/splash';
 
 const App = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      SplashScreen.hide();
-    }, 3000);
-  }, []);
-
-  return (
-    <View style={styles.container}>
-      <Text style={styles.exampleText}>Splash example</Text>
-    </View>
-  );
+  return <Route />;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  exampleText: {
-    fontSize: 18,
-    color: 'black',
-  },
-});
 
 export default App;
