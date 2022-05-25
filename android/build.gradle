@@ -20,9 +20,15 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        // Add Maven repo
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.0.4")
+        // Add the Enigma classpath
+        classpath 'gradle.plugin.chrisney:enigma:1.0.0.8'
         classpath("com.facebook.react:react-native-gradle-plugin")
         classpath("de.undercouch:gradle-download-task:4.1.2")
         // NOTE: Do not place your application dependencies here; they belong

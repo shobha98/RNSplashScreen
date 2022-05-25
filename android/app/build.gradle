@@ -1,5 +1,12 @@
 apply plugin: "com.android.application"
 
+apply plugin: 'com.chrisney.enigma'
+
+// Set Enigma options:
+enigma.enabled = true
+enigma.injectFakeKeys = true
+enigma.ignoredClasses = ["com.rnenigmaexample.MainActivity.java"]
+
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
 
@@ -97,7 +104,7 @@ def enableSeparateBuildPerCPUArchitecture = false
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore.

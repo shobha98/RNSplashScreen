@@ -1,6 +1,5 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import {useNavigation} from '@react-navigation/core';
 
 import souled_store from './asserts/souled_store.gif';
 import souled from './asserts/souled.gif';
